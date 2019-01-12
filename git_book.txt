@@ -18,3 +18,4 @@ eg:https://github/ypp1221/face.git
 额外的命令
 git status: 时刻能得到git的状态，比如修改了文件，但是没有提交
 git diff: 能查看你修改了什么，（对比的形式给出结果）
+git add :修改之后也需要add增加到git中去
