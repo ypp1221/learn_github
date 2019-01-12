@@ -8,14 +8,23 @@ git使用说明
 eg:https://github/ypp1221/face.git
 2)在命令行上输入找到要上传的文件
 3）git init  
-4）git add filepath  （告诉git增加了一个文件夹）
-5) git commit -m "comment"(告诉git，把文件提交到仓库中去)
-6) git remote add origin https://github/ypp1221/face.git
-7) git push -u origin master
-
+4）git add filepath  （告诉git增加了一个文件夹,放到暂存区）
+5) git commit -m "comment"(告诉git，把文件提交到分支(master)中去),此时暂存区中就没有该文件了
+6) git remote add origin https://github/ypp1221/face.git(将远程库和本地库相关联起来)
+7) git push -u origin master(将本地库中的文件推送到远程库中，origin是远程库的名字，master是主分支，-u,由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。)
+8)从现在起，只要本地做了提交，就可以通过命令：
+  git push origin master
+把本地master分支的最新修改推送到github。
 
 <++++++++++++++++++++++++++++++++++++++++++++++++>
 额外的命令
 git status: 时刻能得到git的状态，比如修改了文件，但是没有提交
 git diff: 能查看你修改了什么，（对比的形式给出结果）
 git add :修改之后也需要add增加到git中去
+git log :查看git的提交记录 git log --pretty = oneline减少显示行数
+git checkout -- readme.txt
+1)一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+2)一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+git rm test.txt:删除一个文件，之后要提交git commit -m "remove test.txt"
+
