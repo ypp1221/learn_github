@@ -1,4 +1,9 @@
+"""
+git is a distributed verison control system.
+git is free software distributed under the GPL
+"""
 git使用说明
+<以下是提交一个项目到github的命令>
 1）先在github建立一个厂库(版本库)，复制网址
 eg:https://github/ypp1221/face.git
 2)在命令行上输入找到要上传的文件
@@ -7,3 +12,9 @@ eg:https://github/ypp1221/face.git
 5) git commit -m "comment"(告诉git，把文件提交到仓库中去)
 6) git remote add origin https://github/ypp1221/face.git
 7) git push -u origin master
+
+
+<++++++++++++++++++++++++++++++++++++++++++++++++>
+额外的命令
+git status: 时刻能得到git的状态，比如修改了文件，但是没有提交
+git diff: 能查看你修改了什么，（对比的形式给出结果）
