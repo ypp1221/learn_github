@@ -1,0 +1,9 @@
+git使用说明
+1）先在github建立一个厂库(版本库)，复制网址
+eg:https://github/ypp1221/face.git
+2)在命令行上输入找到要上传的文件
+3）git init  
+4）git add filepath  （告诉git增加了一个文件夹）
+5) git commit -m "comment"(告诉git，把文件提交到仓库中去)
+6) git remote add origin https://github/ypp1221/face.git
+7) git push -u origin master
