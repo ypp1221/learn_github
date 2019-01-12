@@ -28,3 +28,10 @@ git checkout -- readme.txt
 2)一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
 git rm test.txt:删除一个文件，之后要提交git commit -m "remove test.txt"
 
+git分支管理
+查看分支：git branch
+创建分支: git branch <name>
+切换分支: git checkout <name>
+创建加切换: git checkout -b <name>
+合并到当前分支: git merge <name>
+删除分支: git branch -d <name>
